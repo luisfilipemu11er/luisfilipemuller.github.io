@@ -558,120 +558,63 @@ section {
     transform: translateY(-2px);
 }
 
-/* Contact Section - usando Grid */
+/* Contact Section - Layout Simples */
 .contact {
     background: var(--dark-bg);
+    padding: 6rem 0 4rem;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-.contact-description {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-    line-height: 1.8;
+.contact .container {
+    max-width: 900px;
 }
 
 .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .contact-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     background: var(--card-bg);
-    border-radius: 15px;
+    border-radius: 20px;
     text-decoration: none;
     color: var(--text-primary);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition);
+    text-align: center;
 }
 
 .contact-link:hover {
     border-color: var(--primary-color);
-    transform: translateX(10px);
+    transform: translateY(-10px);
     box-shadow: var(--shadow);
 }
 
-.contact-link .icon {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-link .icon svg {
-    width: 100%;
-    height: 100%;
+.contact-icon {
+    width: 48px;
+    height: 48px;
     color: var(--secondary-color);
     transition: var(--transition);
 }
 
-.contact-link:hover .icon svg {
+.contact-link:hover .contact-icon {
     color: var(--primary-color);
-    transform: scale(1.2);
+    transform: scale(1.15) rotate(5deg);
 }
 
-.contact-form {
-    background: var(--card-bg);
-    padding: 2.5rem;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    background: var(--dark-bg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    color: var(--text-primary);
+.contact-text {
     font-size: 1rem;
-    transition: var(--transition);
+    font-weight: 500;
+    word-break: break-word;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
-}
-
-.form-response {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    display: none;
-}
-
-.form-response.success {
-    background: rgba(0, 255, 136, 0.1);
-    border: 1px solid #00ff88;
-    color: #00ff88;
-    display: block;
-}
-
-.form-response.error {
-    background: rgba(255, 0, 0, 0.1);
-    border: 1px solid #ff0000;
-    color: #ff6b6b;
-    display: block;
-}
+/* Formulário removido - mantendo apenas links de contato */
 
 /* Footer - usando Flexbox */
 .footer {
