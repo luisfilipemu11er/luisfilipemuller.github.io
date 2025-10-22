@@ -1,18 +1,31 @@
 {
-  "name": "si-25-6a",
+  "name": "portfolio-luis-muller",
   "version": "1.0.0",
-  "description": "- Apresentação da disciplina\r - Alinhamento de conteúdo, conhecimento e expectativas com a turma\r - Version Control Systems - na prática\r     - Git\r     - GitHub\r ### 13/08/2025 - [2a aula](https://github.com/Welquer/si-25-6a/tree/2a-aula)\r - HTML - [HTML - W3Schools](https://www.w3schools.com/html/)\r - Semântica - [Semantic HTML - W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)\r ### 20/08/2025 - [3a aula](https://github.com/Welquer/si-25-6a/tree/3a-aula)\r - CSS - [CSS - W3Schools](https://www.w3schools.com/css/)\r - Box Model - [CSS Box Model - W3Schools](https://www.w3schools.com/css/css_boxmodel.asp)\r ### 27/08/2025 - [4a aula](https://github.com/Welquer/si-25-6a/tree/4a-aula)\r - Flexbox - [CSS Flexbox - W3Schools](https://www.w3schools.com/css/css3_flexbox.asp)\r - Grid - [CSS Grid - W3Schools](https://www.w3schools.com/css/css_grid.asp)\r ### 03/09/2025 - [1a avaliação](https://github.com/Welquer/si-25-6a/tree/1a-avaliacao)\r - 1a avaliação\r ### 06/09/2025 - [Autoestudo 01](https://github.com/Welquer/si-25-6a/tree/autoestudo-01)\r - Autoestudo 01 - conteúdo será lançado no AVA (aula SOMENTE virtual)\r ### 10/09/2025 - [5a aula](https://github.com/Welquer/si-25-6a/tree/5a-aula)\r - JavaScript - [JS - W3Schools](https://www.w3schools.com/js/)\r - DOM - [JS/HTML DOM - W3Schools](https://www.w3schools.com/js/js_htmldom.asp)\r ### 10/09/2025 - [6a aula](https://github.com/Welquer/si-25-6a/tree/6a-aula)\r - Aula virtual - conteúdo será lançado no AVA\r   - Conteúdo extra a ser definido\r ### 17/09/2025 - [7a aula](https://github.com/Welquer/si-25-6a/tree/7a-aula)\r - Como funciona estrutura cliente/servidor\r     - servidor web vs servidor de aplicação\r     - servidor web: como a nossa página chega no navegador?\r - Utilizar servidor web NGINX e expor URL pública com NGROK\r ### 24/09/2025 - [8a aula](https://github.com/Welquer/si-25-6a/tree/8a-aula)\r - Módulos JavaScript: exportando e reutilizando código\r - Utilizar gerenciadores de pacotes: NPM/Yarn\r     - package.json\r     - package-lock.json\r ### 01/10/2025 - [2a avaliação](https://github.com/Welquer/si-25-6a/tree/2a-avaliacao)\r - 2a avaliação\r ### 08/10/2025 - Semana acadêmica - assistir palestras\r - Conteúdo será lançado no AVA (aula SOMENTE virtual)\r   - NPM package version = npm semver calculator - https://semver.npmjs.com/\r ### 10/10/2025 - [Autoestudo 02](https://github.com/Welquer/si-25-6a/tree/autoestudo-02)\r - Autoestudo 02 - conteúdo será lançado no AVA (aula SOMENTE virtual)\r ### 15/10/2025 - Feriado - Dia do Professor\r ### 22/10/2025 - [9a aula](https://github.com/Welquer/si-25-6a/tree/9a-aula)\r - Padrões comumente utilizados no front-end\r - TypeScript\r - Frameworks / ferramentas\r     - CSS\r     - JavaScript\r     - Build - criar a aplicação a partir do código fonte\r         - Linters\r         - Formaters\r         - build vs deploy: o que deve ser feito antes de entregar a página para o usuário?\r ### 29/10/2025 - SENPEX - assistir palestras\r - Conteúdo será lançado no AVA (aula SOMENTE virtual)\r   - Conteúdo extra a ser definido\r ### 05/11/2025 - [10a aula](https://github.com/Welquer/si-25-6a/tree/10a-aula)\r - Formulários e validações\r ### 12/11/2025 - [11a aula](https://github.com/Welquer/si-25-6a/tree/11a-aula)\r - Acessibilidade\r - SEO\r ### 19/11/2025 - [12a aula](https://github.com/Welquer/si-25-6a/tree/12a-aula)\r - Aula prática - revisão de conteúdo\r ### 26/11/2025 - [3a avaliação](https://github.com/Welquer/si-25-6a/tree/3a-avaliacao)\r - 3a avaliação\r ### 03/12/2025 - [N-1](https://github.com/Welquer/si-25-6a/tree/n-1)\r - N-1",
-  "main": "index.js",
+  "description": "Portfolio profissional de Luis Filipe Bras Muller - DevOps & Cloud Engineer Jr",
+  "type": "module",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx http-server -p 8080 -o",
+    "dev": "npx http-server -p 8080",
+    "test": "echo \"Portfolio desenvolvido para 2a avaliação - SI 6a fase\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Welquer/si-25-6a.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "portfolio",
+    "devops",
+    "cloud",
+    "javascript",
+    "html5",
+    "css3",
+    "grid",
+    "flexbox",
+    "modules"
+  ],
+  "author": "Luis Filipe Bras Muller <luisfilipebrasmulller@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Welquer/si-25-6a/issues"
   },
@@ -20,5 +33,11 @@
   "dependencies": {
     "axios": "^1.12.2",
     "gsap": "^3.13.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

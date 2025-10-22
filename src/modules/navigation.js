@@ -3,34 +3,15 @@
 
 export class Navigation {
     constructor() {
-        this.hamburger = document.getElementById('hamburger');
-        this.navMenu = document.getElementById('navMenu');
         this.navLinks = document.querySelectorAll('.nav-link');
         this.header = document.querySelector('.header');
         this.init();
     }
 
     init() {
-        this.setupHamburgerMenu();
         this.setupSmoothScroll();
         this.setupScrollEffects();
         this.setupActiveLink();
-    }
-
-    // Configurar menu hamburguer para mobile
-    setupHamburgerMenu() {
-        this.hamburger.addEventListener('click', () => {
-            this.hamburger.classList.toggle('active');
-            this.navMenu.classList.toggle('active');
-        });
-
-        // Fechar menu ao clicar em um link
-        this.navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                this.hamburger.classList.remove('active');
-                this.navMenu.classList.remove('active');
-            });
-        });
     }
 
     // Configurar scroll suave
