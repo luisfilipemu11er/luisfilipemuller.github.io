@@ -1,3 +1,208 @@
+# Portfolio Profissional - Luis Filipe Bras Muller
+
+## 📋 Sobre o Projeto
+
+Portfolio profissional desenvolvido como parte da **2ª Avaliação** da disciplina de **Sistemas de Informação - 6ª Fase**.
+
+Este projeto apresenta minha trajetória profissional como **DevOps & Cloud Engineer Jr**, demonstrando habilidades em desenvolvimento web moderno com HTML5, CSS3 e JavaScript ES6.
+
+## 🌐 Aplicação Online
+
+🔗 **Link da aplicação**: [Em breve - será atualizado após deploy no GitHub Pages]
+
+## 🎯 Requisitos Atendidos
+
+### ✅ HTML Semântico
+- Estrutura completa com tags semânticas (`header`, `nav`, `section`, `footer`)
+- Múltiplas seções: Hero, Sobre, Experiência, Habilidades e Contato
+- Acessibilidade com atributos ARIA e estrutura hierárquica adequada
+
+### ✅ CSS com Grid e Flexbox
+- **CSS Grid** utilizado em:
+  - Layout do conteúdo hero (`hero-content`)
+  - Seção sobre (`about-content`)
+  - Grid de habilidades (`skills-grid`)
+  - Timeline de experiências (`timeline`)
+
+- **CSS Flexbox** utilizado em:
+  - Barra de navegação (`navbar`)
+  - Botões do hero (`hero-buttons`)
+  - Links de contato (`contact-links`)
+  - Rodapé (`footer`)
+
+### ✅ 2 Módulos JavaScript Próprios
+1. **`navigation.js`**: Módulo de navegação
+   - Scroll suave entre seções
+   - Destaque de link ativo baseado na posição do scroll
+   - Efeito de sombra no header ao rolar a página
+   - Animação de estatísticas
+   - Scroll reveal para elementos
+
+2. **`contactForm.js`**: Módulo de validação de formulário
+   - Validação de email em tempo real
+   - Validação de nome e mensagem
+   - Feedback visual para o usuário
+   - Prevenção de envio inválido
+
+### ✅ 2 Bibliotecas Externas
+1. **GSAP (GreenSock Animation Platform)** v3.13.0
+   - Animações profissionais no hero
+   - Animação flutuante da floating card
+   - Animações hover nas skill tags
+   - Transições suaves e profissionais
+
+2. **Axios** v1.12.2
+   - Cliente HTTP configurado com interceptors
+   - Integração com GitHub API
+   - Logging de requisições e respostas
+   - Timeout e headers configurados
+
+### ✅ Design Responsivo
+- Media queries para tablets (1024px, 768px)
+- Media queries para mobile (480px)
+- Layout adaptativo com Grid e Flexbox
+- Imagens responsivas
+- Navegação otimizada para todos os dispositivos
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: Estilização moderna com Grid, Flexbox e Custom Properties
+- **JavaScript ES6**: Módulos, classes, async/await, import/export
+- **GSAP**: Biblioteca de animações profissionais
+- **Axios**: Cliente HTTP para requisições
+- **NPM**: Gerenciamento de dependências
+- **Git**: Controle de versão
+
+## 📁 Estrutura do Projeto
+
+```
+si-25-6a/
+├── assets/
+│   ├── images/
+│   │   ├── favicon.svg
+│   │   └── WhatsApp Image 2025-10-22 at 11.25.57.jpeg
+│   └── Curriculo_Luis_Filipe_B_Muller.pdf
+├── src/
+│   ├── modules/
+│   │   ├── navigation.js       # Módulo de navegação
+│   │   └── contactForm.js      # Módulo de formulário
+│   ├── styles/
+│   │   ├── main.css           # Estilos principais
+│   │   └── responsive.css     # Estilos responsivos
+│   └── main.js                # Arquivo principal
+├── index.html                 # Página principal
+├── package.json              # Configuração NPM
+└── README.md                 # Este arquivo
+```
+
+## 🚀 Como Executar Localmente
+
+### Pré-requisitos
+- Node.js >= 14.0.0
+- NPM ou Yarn
+
+### Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/Welquer/si-25-6a.git
+cd si-25-6a
+git checkout 2a-avaliacao-luis-muller
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm start
+```
+
+4. Acesse no navegador:
+```
+http://localhost:8080
+```
+
+## ✨ Funcionalidades Principais
+
+- **Navegação Suave**: Scroll animado entre seções
+- **Animações Profissionais**: Efeitos de entrada e hover com GSAP
+- **Design Moderno**: Interface limpa e profissional inspirada em portfolios de referência
+- **Totalmente Responsivo**: Adaptado para desktop, tablet e mobile
+- **Integração GitHub**: Carregamento dinâmico de dados do perfil
+- **Easter Egg**: Konami Code para surpresa interativa (↑ ↑ ↓ ↓ ← → ← → B A)
+
+## 📚 Conceitos Aplicados
+
+### ES6 Modules
+```javascript
+// Importação de módulos próprios
+import { Navigation, animateStats, setupScrollReveal } from './modules/navigation.js';
+import { ContactForm } from './modules/contactForm.js';
+
+// Importação de bibliotecas externas
+import gsap from '../node_modules/gsap/index.js';
+import axios from '../node_modules/axios/dist/esm/axios.js';
+```
+
+### CSS Grid
+```css
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+```
+
+### CSS Flexbox
+```css
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+```
+
+## 👨‍💻 Autor
+
+**Luis Filipe Bras Muller**
+- Email: luisfilipebrasmulller@gmail.com
+- GitHub: [@luisfilipemu11er](https://github.com/luisfilipemu11er)
+- LinkedIn: [Luis Filipe Muller](https://www.linkedin.com/in/luis-filipe-muller-a02394311/)
+
+## 📝 Informações Acadêmicas
+
+- **Disciplina**: Sistemas de Informação
+- **Fase**: 6ª
+- **Avaliação**: 2ª Avaliação
+- **Branch**: `2a-avaliacao-luis-muller`
+- **Repositório**: [Welquer/si-25-6a](https://github.com/Welquer/si-25-6a)
+
+## 📄 Licença
+
+MIT License - Veja o arquivo LICENSE para mais detalhes.
+
+---
+
+**Desenvolvido com dedicação para a 2ª Avaliação - SI 6ª Fase** 🎓
+
+---
+
 # Repositório da 6a fase - turma de Sistemas de Informação - Unibave / 2025
 
 ## Plano de ensino
